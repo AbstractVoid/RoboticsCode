@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  *
- * Author: Brad Remington (BR, hue?)
+ * Author: Nicholas
  */
 // Whoopystick
 //dudepiston is pneumatic pusher
@@ -21,8 +21,8 @@ public class Shooter {
 
     public int shootingMotor = 6;
     public int shootingMotor2 = 2;
-    public Victor sucksButtOne = new Victor(6);
-    public Victor sucksButtTwo = new Victor(2);
+    public Victor motorOne = new Victor(6);
+    public Victor motorTwo = new Victor(2);
     double maxspeed;
     double angle;
     double speeddif;

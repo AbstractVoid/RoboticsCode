@@ -11,7 +11,7 @@ import java.lang.Math;
 
 /**
  *
- * @author Gaylord Steambath
+ * @author Nicholas
  */
 public final class OI {
 
@@ -19,7 +19,7 @@ public final class OI {
     private Joystick rJoystick = new Joystick(2);
     private Joystick xJoystick = new Joystick(3);
 
-    //curently using default methods instead of OI class methods...not sure why ill look into restructuring it probably not though
+   
     public Joystick getLJoystick() {
         return lJoystick;
     }

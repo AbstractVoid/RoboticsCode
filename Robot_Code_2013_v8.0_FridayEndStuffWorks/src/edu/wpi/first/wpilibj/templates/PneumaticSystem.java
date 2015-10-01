@@ -12,7 +12,7 @@ import java.util.Timer;
  *
  * @author Programming
  */
-public class Extenze {
+public class PneumaticSystem {
 
     OI oi;
     Solenoid extender;
@@ -28,7 +28,7 @@ public class Extenze {
     boolean togglePressure = false;
     boolean switchPressure = false;
 
-    public Extenze(OI oi) {
+    public PneumaticSystem(OI oi) {
         this.oi = oi;
         extender = new Solenoid(3);
         hopper = new Solenoid(4);

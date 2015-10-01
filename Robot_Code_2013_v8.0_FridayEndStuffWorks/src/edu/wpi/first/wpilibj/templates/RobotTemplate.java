@@ -34,10 +34,10 @@ public class RobotTemplate extends IterativeRobot {
     OI oi;
     Drive drive;
     Shooter shoot;
-    GravitySucks grav;
+    ClimbingMechanism grav;
     boolean doClimb = false;
     boolean shooter = false;
-    Extenze extender;
+    PneumaticSystem extender;
     double count;
     Compressor compressor;
     double count2;
@@ -48,9 +48,9 @@ public class RobotTemplate extends IterativeRobot {
         SmartDashboard.putNumber("testValueTwo", 6.9);
         this.oi = new OI();
         this.drive = new Drive(oi);
-        this.extender = new Extenze(oi);
+        this.extender = new PneumaticSystem(oi);
         this.shoot = new Shooter(oi);
-        this.grav = new GravitySucks(oi);
+        this.grav = new ClimbingMechanism(oi);
         compressor = new Compressor(5, 1);
         System.out.println("test");
         SmartDashboard.putNumber("tol", 1);

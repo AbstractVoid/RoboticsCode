@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.can.CANTimeoutException;
  *
  * @author Programming
  */
-public class GravitySucks {
+public class ClimbingMechanism {
 
     boolean gotToTop = false;
     public CANJaguar Beavis;
@@ -72,7 +72,7 @@ public class GravitySucks {
     public double maxRight;
     public double toleranceRange = .023; //tolerance for alignment
 
-    public GravitySucks(OI oi) {
+    public ClimbingMechanism(OI oi) {
         this.oi = oi;
         initBeavis();
         initButthead();

@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  *
- * Author: Hue KNOCK IT OFF TAKE A LAP
+ * Author: Nicholas
  */
 public class Drive {
 
@@ -41,7 +41,7 @@ public class Drive {
      */
     public final int BL = 4;
     /**
-     * huehuehuehuehuehuehuehuehuehuehuehuehue BR? BR? Back right motor channel
+     * 
      */
     public final int BR = 8;
     double speedMult = 9.0;
@@ -60,7 +60,6 @@ public class Drive {
     /**
      * Back right motor
      */
-    //public CANJaguar BackRightJJ; // BR? BR? huehuehuehuehuehuehuehuehuehuehuehuehuehue
     final CANJaguar.ControlMode controlMode = CANJaguar.ControlMode.kVoltage; //Voltage drive
     final CANJaguar.NeutralMode neutralMode = CANJaguar.NeutralMode.kBrake;
     OI oi; //create controls
@@ -116,12 +115,12 @@ public class Drive {
         try {
             for (int i = 0; i < speedArr.length; i++) {
                 JJ[i].setX(speedMult * speedArr[i]);
-            }//set speeds to motors and multiplies by a arbitrary number cause we are pretty lazy tbh
+            }//set speeds to motors and scales appropriately
         } catch (CANTimeoutException ex) {
             ex.printStackTrace();
         }
     }
-    //maybe ramp later w/e i dont really want to this is hard i tried
+   
 
     public void setSpeedsRamp(double[] speedArr) {
         try {
@@ -139,7 +138,7 @@ public class Drive {
             }
             for (int i = 0; i < speedArr.length; i++) {
                 JJ[i].setX(speedMult * speedRamp[i]);
-            }//set speeds to motors and multiplies by a arbitrary number
+            }//set speeds to motors and scales appropriately
         } catch (CANTimeoutException ex) {
             ex.printStackTrace();
         }
